@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="model.css">
+<style>
+.ulis {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #131c2c;
+}
+
+.lis {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #5d4eab;
+}
+img {
+  float: left;  
+  clip-path: circle(20%)
+}
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+     }
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+    .lis {
+        flex: 100%;
+    }
+    li a {
+        padding: 12px;
+    }
+    img {
+        margin: 0 auto;
+    }
+        }
+        
+        @media (max-width: 480px) {
+          .intro h1 {
+            font-size: 2rem;
+          }
+        
+          p, li, dl {
+            font-size: 14px !important;
+          }
+        
+          fieldset {
+            padding: 15px;
+          }
+        }
+        </style>
+            
+</head>    
+<body style="background-color: #111;">
+
+    <ul class="ulis">
+      <li class="lis"><a href="#home">Home</a></li>
+      <li class="lis"><a href="#skills">Skills</a></li>
+      <li class="lis"><a href="#About">About</a></li>
+      <li class="lis"><a href="#Projects">Projects</a></li>
+      <li class="lis" style="float:right"><a class="active" href="#contact">contact</a></li>
+    </ul>
+    <section id="home" class="section">
+        <div class="container" >
+            <div class="intro">
+                <img src="C:\Users\abhin\Desktop\mypho.jpg" alt="Your Photo">
+                <h1 style="font-size:70px;">Hi, I'm Abhinav</h1>
+                <p>Welcome to my online portfolio!</p>
+                <p>"As a web developer, I have the skills to create responsive and user-friendly websites. I'm experienced with front-end technologies like HTML, CSS, and JavaScript to build interactive and attractive pages. I also work with frameworks like React to make my projects more efficient. On the back-end, I know tools like Node.js and Python, and I’m comfortable working with databases like MySQL and MongoDB. I use Git for version control to collaborate smoothly with others. I'm always learning new skills to keep up with the latest web trends and create the best solutions."</p>
+            </div>
+        </div>
+    </section>
+    <section id="About" class="section">
+        <div class="container">
+            <fieldset>
+                <legend>About Me</legend>
+                <p style="font-size: 18px;color:#787878">
+                    I am a web developer passionate about creating engaging and user-friendly websites.
+                    With a solid background in front-end development, I specialize in HTML, CSS, and JavaScript, 
+                    and I am continuously learning to improve my skills.
+                    My journey as a web developer has been driven by a passion for technology and a deep desire to create functional, user-friendly websites and applications. I have always been fascinated by the way websites come to life with just a few lines of code, and over time, I’ve developed a diverse skill set that allows me to bring these digital creations to reality.
+                    I am passionate about creating websites that not only work well but also provide value to users. Whether it's an e-commerce platform, a personal blog, or a business website, my goal is to deliver high-quality, innovative web solutions that meet the needs of clients and users alike. The digital world is ever-changing, and I am excited to continue growing as a web developer, always striving for excellence in my craft.
+                </p>
+            </fieldset>
+        </div>
+    </section>
+    <section id="skills" class="section">
+        <div class="container">
+            <fieldset>
+                <legend>Skills</legend>
+                <p style="font-size: 18px;color:#787878">As a web developer, I specialize in creating and maintaining websites and web applications by working with both front-end and back-end technologies. On the front-end, I use HTML, CSS, and JavaScript to build the structure, layout, and interactivity of a website. I also work with front-end libraries and frameworks like React, Angular, and Vue.js to streamline development and enhance performance. On the back-end, I’m skilled with server-side languages like Node.js, Python, and PHP, and I manage databases like MySQL, PostgreSQL, or MongoDB to ensure efficient data storage and retrieval.
+    
+                    My daily tasks include designing user interfaces, ensuring websites are responsive and mobile-friendly, and optimizing performance for fast loading times. I also handle the integration of APIs and third-party services to extend the functionality of my projects. Debugging and troubleshooting are essential parts of my work, ensuring that the website functions seamlessly across different browsers and devices. I use version control systems like Git to collaborate with teams and track code changes. With a focus on detail and usability, I aim to create websites that not only work well but also provide a positive user experience, all while keeping up with the latest trends and technologies in web development.</p>
+                <br><p style="font-size: 18px;color: #787878">I am experienced in :</p>    
+                <ul style="color:rgb(138, 124, 124);list-style-type:none;">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+            </fieldset>
+        </div>
+    </section>
+    <section id="Projects" class="section">
+        <div class="container">
+            <fieldset>
+                <legend>Projects</legend>
+                <dl style="font-size: 22px;color: #787878">
+                    <dt>Task Manager App (MERN Stack)</dt>
+                    <dl>-A full-stack to-do app with user authentication, real-time updates, and drag-and-drop tasks.</dl>
+                    <dt>Portfolio Website (React + TailwindCSS)</dt>
+                    <dl>-A personal site to showcase your projects, blogs, and resume. You can host it on GitHub Pages or Vercel.</dl>
+                    <dt>Movie Recommendation System</dt>
+                    <dl>-Collaborative filtering or content-based filtering using datasets like MovieLens.</dl>
+                </dl>
+            </fieldset>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <fieldset>
+                <legend>Contact:</legend>
+                <p style="font-size: 22px;color: #787878">Phone:<a href="tel:+8919102475">+8919102475</a></p>
+                <p style="font-size: 22px;color: #787878">My E-mail:<a href="mailto:abhinavthamminemi370@gmail.com">abhinavthammineni370@gmail.com</a></p>
+                <p style="font-size: 22px;color: #787878">My Git-Hub Account:<a href=https://github.com/Blackvenom333 target="_blank">https://github.com/Blackvenom333</a></p>
+            </fieldset>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Portfolio</p>
+        </div>
+    </footer>
+    </body>
+    </html>
+    
+    
+    
